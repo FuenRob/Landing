@@ -1,0 +1,32 @@
+<div id="form">
+	<p class="instructions"><span>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</span></p>
+	<p class="instructions"><span>¡Date prisa!</span></p>
+	<form method="POST" id="form_main">
+		<input type="hidden" name="action" value="submit_form">
+		<input type="hidden" name="ajax" value="1">
+		<input type="hidden" name="referer_id" value="{referer_id}">
+       
+		<div class="row"> 
+       
+			<label for="FirstName">Nombre</label>
+			<input type="text" name="FirstName" id="FirstName" required>
+		</div>
+		<div class="row">
+			<label for="URN">Email</label>
+			<input type="email" name="URN" id="URN" required>
+		</div>
+        
+		<input name="" id="checklegal" type="checkbox" value="" onclick="habilita()">Aceptar legales
+
+		<div id="buttonfb" style="display:none;" class="fb-login-button" data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="false"></div>
+		<input type="submit" name="envia" value="Enviar" id="confirm" class="send_button" DISABLED="true">
+
+	</form>
+	<!--<div class="row requisitos">
+		<p>Recuerda que para participar en el Gran Trail Peñalara es indispensable cumplir los requisitos de la organización. Puedes consultarlos <a href="http://www.grantrailgtp.com/media/56b5b072e8a62.pdf" target="_blank"> aquí </a></p>		
+	</div>-->
+	<div class="row  bases">
+		<a href="#" target="_blank">Bases legales</a>
+	</div>
+	
+</div>

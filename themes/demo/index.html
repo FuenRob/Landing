@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>{title}</title>
+		<meta property="og:url"           content="{og_url}" />
+		<meta property="og:type"          content="website" />
+		<meta property="og:title"         content="{og_title}" />
+		<meta property="og:description"   content="{og_description}" />
+		<meta property="og:image"         content="{og_image}" />
+		<style>
+			#video {float:left;border:1px solid red;}
+			#contenido {float:right;border:1px solid green;}
+		</style>
+	</head>
+	<body>
+		<h1>AJAX!!</h1>
+		<div id="video">video</div>
+
+		<div id="contenido">
+			{content}
+		</div>
+		<div id="respuesta"></div>
+		<div id="fb-root"></div>
+		<script src="res/js/jquery-1.12.4.min.js"></script>
+		{javascript_code}
+	</body>
+</html>

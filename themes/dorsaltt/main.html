@@ -1,0 +1,29 @@
+<div id="form">
+	<p class="instructions"><span>Sorteamos 2 dorsales para el recorrido de 110km</span> entre todos los runners que se registren en el siguiente formulario. </p>
+	<p class="instructions"><span>Después no olvides compatirlo con tus amigos.</span> Cada vez que alguno de ellos se registre, tu <span>ganas una participación extra en el sorteo.</span> Cuantas más participaciones tengas, mayor será la probabilidad de que toque.</p>
+	<p class="instructions">Tienes hasta día 14 a las 23:59 horas para registrarte. A la mañana siguiente contactaremos con los ganadores.</p>
+	<p class="instructions">¡Suerte!</p>
+	<form method="POST" id="form_main">
+		<input type="hidden" name="action" value="submit_form">
+		<input type="hidden" name="ajax" value="1">
+		<input type="hidden" name="referer_id" value="{referer_id}">
+		<div class="row">
+			<label for="FirstName">Nombre</label>
+			<input type="text" name="FirstName" id="FirstName" required>
+		</div>
+		<div class="row">
+			<label for="URN">Email</label>
+			<input type="email" name="URN" id="URN" required>
+		</div>
+		<div class="row">
+			<input type="submit" name="envia" value="Enviar" class="send_button">
+		</div>
+	</form>
+	<div class="row requisitos">
+		<p>Recuerda que para participar en el Gran Trail Peñalara es indispensable cumplir los requisitos de la organización. Puedes consultarlos <a href="http://www.grantrailgtp.com/media/56b5b072e8a62.pdf" target="_blank"> aquí </a></p>		
+	</div>
+	<div class="row  bases">
+		<a href="http://toptrail.es/content/27-dorsales-gran-trail-penalara" target="_blank">Bases legales</a>
+	</div>
+	
+</div>

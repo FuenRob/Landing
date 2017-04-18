@@ -1,0 +1,28 @@
+<div id="form">
+	<p class="instructions"><span>¿Y después? ¡Comparte y anima a tus amigos a que también participen! Cada vez que uno de ellos se registre, tu obtienes una participación extra. Cuantas más acumules, más probabilidad de ganar tienes.</span> </p>
+	<p class="instructions"><span>Tienes hasta el día 26 de junio para participar. El día 27 haremos el sorteo y sacaremos el nombre ganador.</span>	</p>
+	<p class="instructions"><span>¡Suerte!</span></p>
+	<form method="POST" id="form_main">
+		<input type="hidden" name="action" value="submit_form">
+		<input type="hidden" name="ajax" value="1">
+		<input type="hidden" name="referer_id" value="{referer_id}">
+		<div class="row">
+			<label for="FirstName">Nombre</label>
+			<input type="text" name="FirstName" id="FirstName" required>
+		</div>
+		<div class="row">
+			<label for="URN">Email</label>
+			<input type="email" name="URN" id="URN" required>
+		</div>
+		<div class="row">
+			<input type="submit" name="envia" value="Enviar" class="send_button">
+		</div>
+	</form>
+	<!--<div class="row requisitos">
+		<p>Recuerda que para participar en el Gran Trail Peñalara es indispensable cumplir los requisitos de la organización. Puedes consultarlos <a href="http://www.grantrailgtp.com/media/56b5b072e8a62.pdf" target="_blank"> aquí </a></p>		
+	</div>-->
+	<div class="row  bases">
+		<a href="http://toptrail.es/content/28-cheque-100" target="_blank">Bases legales</a>
+	</div>
+	
+</div>

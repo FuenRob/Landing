@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8" /> 
+		<title>{title}</title>
+		<meta property="og:url"           content="{og_url}" />
+		<meta property="og:type"          content="website" />
+		<meta property="og:title"         content="{og_title}" />
+		<meta property="og:description"   content="{og_description}" />
+		<meta property="og:image"         content="{og_image}" />
+		<link href='https://fonts.googleapis.com/css?family=Raleway:400,900,700,800' rel='stylesheet' type='text/css'>
+		<link href='css/bootstrap.css' rel='stylesheet' type='text/css'>
+		</head>
+	<style>
+	body {
+	background-image: url("{theme_dir}img/ttback.png");
+		background-position:top left;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		font-family: 'Raleway', sans-serif;}
+	h1, h2{color:rgba(242, 144, 4, 1);
+	}
+	.main-title{
+	text-align: center; 
+	vertical-align: middle;
+	}
+	.title_img img{
+	max-height: 70px;
+	}
+	.title_img img, .title_img p{
+	float: left;
+	}
+	.title_img{
+	overflow: auto;
+	padding-left: 20%;
+	}
+	.title_img :first-child{
+	margin-right: 10%;
+	}
+	.title_img{
+	height: 80px;
+	}
+	.title_img .fecha{
+	font-size: 1.3em;
+    margin-left: 20px;
+    font-weight: bold;
+	color: #fff;
+	}
+	.dinamic_content{
+	text-align: center;
+	background: rgba(242, 144, 4, 0.63); 
+	background-image: url("{theme_dir}img/form_bg2.png");
+	background-position: right bottom; 
+	background-repeat: no-repeat;
+	background-size: 100% auto; 
+	border-radius: 20px;
+	max-width:600px;
+	margin: 0 auto;
+	height: auto;
+	}
+	.instructions{
+	padding-right: 10px; 
+	padding-left: 10px;}
+	
+	.instructions span{
+	color: #fff;
+	}
+	
+	
+	#form{
+	padding-top: 10px;
+	font-weight:600;}
+	#form_main{
+	overflow: auto;
+	margin-top: -5%;
+	}
+	#form_main input{
+	border: none; 
+	border-radius: 5px;
+	width: 80%;
+	float: right;
+	padding: 10px;
+	background-color: rgba(255, 255, 255, 0.85);
+	}
+	#form_main .row{
+	width: 90%;
+	margin: 40px auto;
+	}
+	#form_main .row label{
+	text-align: left; 
+	width: 20%;
+	}
+	#form_main :nth-child(7){
+	margin-top: 10%;
+	}
+	#form_main input.send_button{
+	width: 30%;
+    background-color: #100300;
+    margin-right: 30%;
+    color: #F29004;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 7%;
+    margin-bottom: 20%;
+	}
+	#form_main select, #form_main select .option{
+	border: none; 
+	border-radius: 5px;
+	width: 20%;
+	float: right;
+	margin-right: 30%;
+	padding: 10px;
+	background-color: rgba(255, 255, 255, 0.85);
+	}
+	.dist_label{margin-left: 25%;}
+	.respuesta_title{
+	font-size: 2em; 
+	font-weight: bold;
+	padding-top: 5%;
+	}
+	.respuesta_p{
+	font-weight: 600;
+	}
+	#respuesta:last-child{
+	margin-bottom: 15%;
+	}
+	.bases a{
+	color: #f29004;
+	font-weight: 300;
+    font-size: 0.8em;
+	}
+	.bases{
+	padding-bottom: 10px;
+    text-align: center;
+    margin-right: 30px;
+	}
+	.requisitos{
+	color: #f29004;
+	text-align: center;
+	font-weight: 300;
+    font-size: 0.8em;
+	}
+	.requisitos a{
+	color: #f29004;
+	text-align: center;
+	font-weight: bold;
+    font-size: 0.9em;
+	}
+	
+	.fb_iframe_widget{
+	transform: scale(1.7);
+	-ms-transform: scale(1.7);
+   	-webkit-transform: scale(1.7);
+	margin: 15% auto 25% auto;
+	}
+	</style>
+	<body>
+		<div class="row main-title">
+		<h1>REGALAMOS 2 DORSALES PARA EL GRAN TRAIL PEÑALARA</h1>
+		<h2>¡Regístrate y comparte!</h2>
+		<div class="row title_img">
+			<img src="{theme_dir}img/logott.png">
+			<img src="{theme_dir}img/logo110.png">
+			<p class="fecha">24-26 de junio</p>
+		</div>
+		
+		
+		</div>
+		<div class="row dinamic_content">
+		{content}
+		<div id="respuesta"></div>
+		<div id="fb-root"></div>
+		<script src="res/js/jquery-1.12.4.min.js"></script>
+		{javascript_code}
+		</div>
+	</body>
+
+</html>
